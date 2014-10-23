@@ -1,17 +1,17 @@
-var draft = new Object();
+_draft = function(){};
 
 var _clipboard = '';
 
-draft.prototype.content = "Lorem Ipsum Dolor";
-draft.prototype.createdDate = '';
-draft.prototype.createdLatitude = '';
-draft.prototype.createdLongitude = '';
-draft.prototype.modifiedDate = '';
-draft.prototype.modifiedLatitude = '';
-draft.prototype.modifiedLongitude = '';
-draft.prototype.accessedDate = '';
-draft.prototype.flagged = false;
-draft.prototype.defineTag = function( tagName, tagString ){}
+_draft.prototype.content = "Lorem Ipsum Dolor";
+_draft.prototype.createdDate = '';
+_draft.prototype.createdLatitude = '';
+_draft.prototype.createdLongitude = '';
+_draft.prototype.modifiedDate = '';
+_draft.prototype.modifiedLatitude = '';
+_draft.prototype.modifiedLongitude = '';
+_draft.prototype.accessedDate = '';
+_draft.prototype.flagged = false;
+_draft.prototype.defineTag = function( tagName, tagString ){}
 
 /**
  * usually persists the changes to the drafts object
@@ -54,3 +54,5 @@ function stopAction(){
 function markdown(message, useXHTML){
   return message;
 }
+
+var draft = new _draft();
